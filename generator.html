@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://i.pinimg.com/474x/ec/ae/44/ecae440f5807bdbe95dde249cab8e637.jpg');
+            background-repeat: no-repeat;
+        }
+          .container{
+            border: 3px double black;
+            width: 50%;
+            margin: 2% 18%;
+            padding: 2% 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+            
+        }
+        .btn{
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 10%;
+        }
+        .bton{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Joke Generator</h1>
+        <form action="">
+            Joke -- <p id="joke"></p> 
+Funny Answer -- <p id="answer"></p>
+           <br><br> count -- <p id="length"></p>
+
+          <div class="bton">
+            <button class="btn" type="button" onclick="jokes()">Get_Joke</button>
+            <button class="btn" type="reset" onclick="cleared()">Clear</button>
+          </div>
+        </form>
+    </div>
+    <script src="./generator.js"></script>
+</body>
+</html>

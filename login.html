@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px double black;
+            width: 50%;
+            margin: 2% 18%;
+            padding: 2% 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            padding: 3%;
+            border-radius: 10px;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body> 
+   <div class="container">
+    <h1>Login Page</h1>
+    <form  onsubmit=" return login()">
+        <label for="">
+            UserName: <input type="text" required id="user"><br> <br>
+            Password:&nbsp;&nbsp; <input type="password" id="pwd" required> <br><br>
+            <button type="submit" class="btn">Submit</button> &nbsp;&nbsp;
+            <button type="reset" class="btn">Reset</button>
+    
+        </label>
+    </form>
+   </div>
+   <script src="./login.js"></script>
+</body>
+</html>
